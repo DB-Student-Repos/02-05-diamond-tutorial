@@ -8,7 +8,7 @@ def rows(letter):
     diamond_list = []
     
     for i in range(pos + 1):
-        cur_str = []
+        cur_str = ''
         for j in range(pos):
             cur_str = cur_str + ' '
          
