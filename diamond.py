@@ -25,15 +25,14 @@ def rows(letter):
             
         pos = pos - 1
         middle_space = middle_space + 2
+        row_letter = chr(ord(row_letter) + 1)
         
         diamond_list.append(cur_str)
     
     j = len(diamond_list) - 2
     for i in range(num_rows):
-        diamond_list-append(diamond_list[j])
+        diamond_list.append(diamond_list[j])
+        j = j - 1
+        
         
     return diamond_list
-        
-            
-            
-        
