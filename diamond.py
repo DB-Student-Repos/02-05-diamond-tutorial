@@ -19,12 +19,14 @@ def rows(letter):
         
         if i != 0:
             cur_str = cur_str + row_letter
+            middle_space = middle_space + 2
+        else:
+            middle_space = middle_space + 1
             
         for j in range(pos):
             cur_str = cur_str + ' '
             
         pos = pos - 1
-        middle_space = middle_space + 2
         row_letter = chr(ord(row_letter) + 1)
         
         diamond_list.append(cur_str)
